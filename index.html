@@ -1,285 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Johannes Naude Opperman - Personal Webpage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Page</title>
+    <!-- Bootstrap CSS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Your custom CSS (if any) can be added here -->
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f8f8f8;
+      .card-img-top {
+        transition: transform 0.3s ease;
       }
 
-      header {
-        background-color: #72a034;
-        text-align: center;
-        padding: 20px;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 50%;
-        max-width: 200px;
-        border: 5px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      h1 {
-        color: #72a034;
-        margin-top: 20px;
-      }
-
-      h2 {
-        margin-top: 20px;
-        background-color: #72a034;
-        color: #fff;
-        padding: 10px;
-        border-radius: 8px;
-      }
-
-      p,
-      li {
-        margin-bottom: 15px;
-      }
-
-      ul {
-        list-style: none;
-        padding-left: 0;
-      }
-
-      ul li::before {
-        content: "\2022";
-        margin-right: 10px;
-      }
-
-      a {
-        color: #007bff;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
+      .card-img-top:hover {
+        transform: scale(1.1);
       }
     </style>
   </head>
   <body>
-    <h1>Johannes Naude Opperman</h1>
-    <img
-      src="https://media.licdn.com/dms/image/C5603AQGHN-IQf0baVA/profile-displayphoto-shrink_800_800/0/1547099880697?e=2147483647&v=beta&t=GXyxWLHXhGJ49ac-5-EhAaBv2v54JLsIDH1ZJFDwYx4"
-      alt="Johannes Naude Opperman"
-    />
-
-    <h2>Short Bio</h2>
-    <p>
-      Dedicated and results-driven professional with a diverse background in the
-      apple industry, offering expertise in agriculture, data analysis, software
-      development, and a key role in the ongoing inhouse development
-      applications at Two-a-Day Group. Accomplished pome and stone fruit
-      consultant with a proven track record in crop nutrition recommendations
-      and irrigation monitoring. Proficient in leveraging data analytics and
-      visualization tools to drive informed decision-making. Strong academic
-      foundation in BSc Agric, Viticulture, and Oenology from Stellenbosch
-      University, complemented by valuable management experience and a passion
-      for advancing technology-driven solutions.
-    </p>
-
-    <h2>Contact Details</h2>
-    <ul>
-      <li>Name: Johannes Naude Opperman</li>
-      <li>Contact Number: 074 079 2710</li>
-      <li>Email: jn.opperman@gmail.com</li>
-      <!-- Add links to your professional social media profiles, e.g., LinkedIn -->
-      <li>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/naude-opperman-b302a5140/"
-          >LinkedIn Profile</a
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Online Shopping</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </li>
-    </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Login/Logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Shopping Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Checkout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">My Shop</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <h2>Skills and Competencies</h2>
-    <ul>
-      <li>
-        Django Framework Proficiency: A deep understanding of the Django
-        framework, including models, views, templates, forms, and authentication
-        system.
-      </li>
-      <li>
-        Python Programming: Proficiency in Python programming, including data
-        structures and object-oriented programming.
-      </li>
-      <li>
-        Web Development Fundamentals: Strong knowledge of HTML, CSS, and
-        JavaScript for creating dynamic and responsive web pages.
-      </li>
-      <li>
-        Database Management: Competence in working with relational databases
-        like PostgreSQL, MySQL, or SQLite.
-      </li>
-      <li>
-        RESTful API Development: Experience in building RESTful APIs using
-        Django's built-in tools or Django Rest Framework.
-      </li>
-      <li>
-        Version Control: Familiarity with version control systems like Git.
-      </li>
-      <li>
-        Template Engines: Knowledge of template engines like Django's template
-        language or Jinja2.
-      </li>
-      <li>
-        Testing and Debugging: Proficiency in writing unit tests and debugging
-        skills for application reliability.
-      </li>
-      <li>
-        Security Best Practices: Awareness of security best practices to prevent
-        common vulnerabilities.
-      </li>
-      <li>
-        Authentication and Authorization: Understanding of user authentication
-        and authorization mechanisms.
-      </li>
-      <li>
-        Performance Optimization: Ability to optimize application performance
-        through caching strategies and database query optimization.
-      </li>
-      <li>
-        Deployment and DevOps: Knowledge of deploying Django applications in
-        production environments and server management.
-      </li>
-      <li>
-        Frontend Frameworks: Familiarity with frontend frameworks like React,
-        Angular, or Vue.js.
-      </li>
-      <li>
-        Problem-Solving Skills: Strong problem-solving abilities to identify and
-        resolve technical challenges.
-      </li>
-      <li>
-        Project Management: Effective project management skills for task
-        prioritization and meeting deadlines.
-      </li>
-      <li>
-        Continuous Learning: An attitude of continuous learning and staying
-        updated with the latest Django advancements.
-      </li>
-      <li>
-        Collaboration and Communication: Ability to work collaboratively in a
-        team environment and communicate technical concepts effectively.
-      </li>
-      <li>
-        Adaptability: Flexibility and adaptability to handle changes in project
-        requirements and technology stack.
-      </li>
-    </ul>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Item 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">Price: $20</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 2</h5>
+              <p class="card-text">Price: $30</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 3</h5>
+              <p class="card-text">Price: $15</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 4</h5>
+              <p class="card-text">Price: $40</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 5</h5>
+              <p class="card-text">Price: $22</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 6</h5>
+              <p class="card-text">Price: $28</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 7"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 7</h5>
+              <p class="card-text">Price: $17</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 8"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 8</h5>
+              <p class="card-text">Price: $35</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 9 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 9"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 9</h5>
+              <p class="card-text">Price: $19</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 10 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://picsum.photos/20/20"
+              class="card-img-top img-fluid"
+              alt="Product 10"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 10</h5>
+              <p class="card-text">Price: $50</p>
+              <button class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h2>Education</h2>
-    <p>
-      Stellenbosch University - BSc. Agric Viticulture & Oenology (Jan 2013 –
-      Dec 2016)
-    </p>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="nameInput">Name:</label>
+                <input
+                  type="text"
+                  class="form-control mx-2"
+                  id="nameInput"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="emailInput">Email:</label>
+                <input
+                  type="email"
+                  class="form-control mx-2"
+                  id="emailInput"
+                  placeholder="Your Email"
+                />
+              </div>
+              <button type="submit" class="mt-5 btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-transparent-png-19.png"
+              alt="Company Logo"
+              width="250"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <h2>Work Experience</h2>
-    <h3>
-      Two-a-Day Group (Pty) Limited - Django Developer (Mar 2022 – Present)
-    </h3>
-    <ul>
-      <li>
-        Expertise in Django web development, enhancing software efficiency and
-        user experience.
-      </li>
-      <li>
-        Advanced programming skills in Python for developing innovative
-        solutions.
-      </li>
-      <li>
-        Data analysis and reporting proficiency to aid management
-        decision-making.
-      </li>
-      <li>
-        Strong understanding of packhouse operations and fruit supply chain
-        processes, specifically related to the inhouse applications.
-      </li>
-    </ul>
-
-    <h3>Monteith Trust - Data Analyst (Feb 2021 – Feb 2022)</h3>
-    <ul>
-      <li>
-        Proficiency in SQL and Power Query for data extraction and
-        transformation.
-      </li>
-      <li>
-        Advanced skills in Excel Pivots and MS Power BI for data visualization
-        and analysis.
-      </li>
-      <li>Experience in managing and leveraging Microsoft 365 environment.</li>
-      <li>
-        Strong understanding of system maintenance and data quality assurance.
-      </li>
-    </ul>
-
-    <h3>Agrimotion - Agricultural Consultant (Apr 2019 – Jan 2021)</h3>
-    <ul>
-      <li>
-        Expertise in agricultural consulting, crop nutrition, and irrigation
-        monitoring.
-      </li>
-      <li>
-        Data analytics and visualization skills for enhanced decision-making.
-      </li>
-      <li>
-        Proficiency in Excel dashboard development for comprehensive analysis.
-      </li>
-      <li>
-        Strong background in soil surveys, analysis, and orchard development.
-      </li>
-    </ul>
-
-    <h3>MJC Holdings (Pty) Ltd - Intern (Jan 2017 – Mar 2019)</h3>
-    <ul>
-      <li>
-        Management skills, including negotiation, operational, and marketing
-        expertise.
-      </li>
-      <li>Budget control and sales management proficiency.</li>
-      <li>
-        Innovative problem-solving and practical system procedure development.
-      </li>
-      <li>
-        Knowledge of socio-economic development initiatives within the
-        agricultural sector.
-      </li>
-    </ul>
-
-    <h3>Groot Constantia - Internship (Dec 2015 – May 2016)</h3>
-    <ul>
-      <li>
-        Practical experience in winemaking processes and fermentation
-        monitoring.
-      </li>
-      <li>Knowledge of cellar management and hygiene practices.</li>
-      <li>
-        Familiarity with the production side of the agricultural industry.
-      </li>
-    </ul>
-
-    <h2>Projects</h2>
-    <p>
-      Described above under job experience, I do not have a github repo or
-      anything to link to.
-    </p>
-
-    <h2>Blog Posts and Articles</h2>
-    <p>
-      Would add in here but also don't have any blogs or articles that I can
-      link to see below an example of how I would do it
-    </p>
-    <ul>
-      <!-- Add links to any blog posts or articles you have written -->
-      <li><a href="link_to_your_blog_post">Title of Blog Post 1</a></li>
-      <li><a href="link_to_your_article">Title of Article 1</a></li>
-    </ul>
+    <!-- Bootstrap JS scripts (jQuery and Popper.js are required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript (if any) can be added here -->
   </body>
 </html>
+
